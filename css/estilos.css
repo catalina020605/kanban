@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.board {
+    display: flex;
+    overflow-x: auto;
+}
+
+.column {
+    flex: 0 0 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.addColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.column-actions select {
+    width: 100px;
+}
+
+.column-actions button {
+    margin-right: 5px;
+}
+
+/* Alinear el botón "Agregar Tarea" a la derecha */
+.add-task-button {
+    margin-left: auto;
+}

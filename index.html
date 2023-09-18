@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Tablero Kanban</h1>
+    <div class="board">
+        <div class="column">
+            <div class="column-actions">
+                <select onchange="performAction(this)">
+                    <option value="none">Acciones</option>
+                    <option value="clear">Limpiar</option>
+                    <option value="delete">Borrar</option>
+                    <option value="duplicate">Duplicar</option>
+                </select>
+            </div>
+            <h2>Por hacer</h2>
+            <div>
+                <input type="text" id="newTask1" placeholder="Nueva tarea">
+                <button class="add-task-button" onclick="addTask('newTask1')">Agregar Tarea</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-actions">
+                <select onchange="performAction(this)">
+                    <option value="none">Acciones</option>
+                    <option value="clear">Limpiar</option>
+                    <option value="delete">Borrar</option>
+                    <option value="duplicate">Duplicar</option>
+                </select>
+            </div>
+            <h2>En progreso</h2>
+            <div>
+                <input type="text" id="newTask2" placeholder="Nueva tarea">
+                <button class="add-task-button" onclick="addTask('newTask2')">Agregar Tarea</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-actions">
+                <select onchange="performAction(this)">
+                    <option value="none">Acciones</option>
+                    <option value="clear">Limpiar</option>
+                    <option value="delete">Borrar</option>
+                    <option value="duplicate">Duplicar</option>
+                </select>
+            </div>
+            <h2>Completado</h2>
+            <div>
+                <input type="text" id="newTask3" placeholder="Nueva tarea">
+                <button class="add-task-button" onclick="addTask('newTask3')">Agregar Tarea</button>
+            </div>
+        </div>
+        <div class="addColumn">
+            <input type="text" id="newColumn" placeholder="Nueva columna">
+            <button onclick="addColumn()">Agregar Columna</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
